@@ -64,14 +64,15 @@
   font-family: 'Occ Arrow';
   font-variation-settings: 'wdth' 100;
   position: relative;
-  .leftarrow{
-    position: absolute;
-    left:0;
-  }
-  .rightarrow{
-    position: absolute;
-    right: 0;
-  }
+  top: -0.1em;
+  // .leftarrow{
+  //   position: absolute;
+  //   left:0;
+  // }
+  // .rightarrow{
+  //   position: absolute;
+  //   right: 0;
+  // }
 }
 
 .definition{
@@ -98,12 +99,13 @@
   .arrow{
     display: flex;
     align-items: center;
-    font-size: 100px;
+    font-size: 80px;
+    grid-column: span 1;
   }
 }
 .interp{
-  font-size: 300px;
-  grid-column: span 3;
+  font-size: 200px;
+  grid-column: span 2;
 }
 
 
@@ -354,6 +356,7 @@ table{
   p{
     font-family: 'Times', 'Times New Roman', serif;
     font-size: var(--size-small);
+    color: black;
   }
 }
 .area:last-child{
@@ -397,6 +400,9 @@ table{
         border-color: var(--color-grey);
         cursor: pointer;
     }
+}
+.white.switch{
+  background: white;
 }
 .black{
     background: black;
@@ -454,7 +460,9 @@ table{
   text-align: center;
 }
 
-
+#line p{
+  font-size: 30px;
+}
 #word {
     padding: 0;
     p{
@@ -515,4 +523,9 @@ table{
 }
 [data-shapemode='reset']{
 
+}
+
+
+.control-char{
+  font-size: 50vh;
 }

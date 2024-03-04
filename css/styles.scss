@@ -28,8 +28,8 @@
 }
 :root{
   --color-dark: rgb(15 15 15);
-  --color-bg: rgb(255 255 255);
-  --color-txt: rgb(30 30 30);
+  --color-bg: rgb(30 30 30);
+  --color-txt: rgb(255 255 255);
   --color-link: rgb(100 100 100);
   --color-grey: rgb(150 150 150);
   --pad: 10px;
@@ -47,7 +47,7 @@
 }
 
 body {
-  font-size: 20px;
+  font-size: 16px;
   font-family: 'Caper VF', sans-serif;
   letter-spacing: 0.01em;
   color: white;
@@ -101,9 +101,7 @@ footer{
 
 .slide{
   position: relative;
-  padding: var(--pad-content);
-  padding-top: var(--pad);
-  padding-bottom: 6rem;
+  padding: var(--pad) var(--pad-content) var(--pad-content);
   background-color: var(--color-bg);
   background-size: cover;
   color: var(--color-txt);
@@ -118,6 +116,7 @@ footer{
   }
 }
 
+
 .dark{
   background: var(--color-dark);
   color: var(--color-bg);
@@ -130,6 +129,11 @@ footer{
 
 h1, h2, h3, h4, h5, p{
   font-weight: normal;
+  max-width: 32em;
+}
+
+blockquote{
+  max-width: 16em;
 }
 
 em{
@@ -141,20 +145,17 @@ em{
 h1{
   font-size: var(--size-xlarge);
   line-height: 1.0;
-  letter-spacing: -0.01em;
   --wght: 550;
 }
 h2{
   font-size: var(--size-large);
   line-height: 1.0;
   margin-bottom: var(--pad);
-  letter-spacing: -0.01em;
   --wght: 200;
 }
 h3{
   font-size: var(--size-medium);
   line-height: 1.2;
-  letter-spacing: -0.01em;
 }
 h4{
   font-size: var(--size-small);
@@ -189,7 +190,7 @@ figcaption.screen{
 
 blockquote{
   width: 85%;
-  font-size: var(--size-large);
+  font-size: var(--size-medium);
   --wght: 200;
   line-height: 1.1;
   text-indent: -0.5em;
@@ -229,10 +230,6 @@ li{
   grid-column: span 4;
 }
 
-.divider{
-  background: var(--color-txt);
-  color: white; 
-}
 
 .whitebg{
   background: white;
@@ -257,7 +254,10 @@ li{
 figure{
   width: 100%;
 }
-
+.source{
+  font-size: 0.8em;
+  margin-left: 1em;
+}
 img, video{
  margin: auto;
  display: block;
@@ -273,6 +273,16 @@ img, video{
   height: 100%;
   display: flex;
   align-items: center;
+}
+
+.pad{ 
+  padding: var(--pad);
+  background: white;
+}
+
+.slide.white{
+  --color-bg: white;
+  --color-txt: var(--color-dark);
 }
 
 @import 'diagrams';
