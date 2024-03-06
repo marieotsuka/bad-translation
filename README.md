@@ -1,6 +1,5 @@
-# Type in Real Time
-Variable Fonts as a Web Medium
-
-CDW. Apr 7. 2023
+# Letter / Form
+## March 4 2024
+Lecture for Bad Translation: Expanded Typography and Publication, Bo-won Keum’s class at MIT, Boston
 
 
